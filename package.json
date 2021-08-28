@@ -2,7 +2,7 @@
   "name": "kite",
   "displayName": "Kite AutoComplete AI Code: Python, Java, Go, PHP, C/C#/C++, Javascript, HTML/CSS, Typescript, React, Ruby, Scala, Kotlin, Bash, Vue, React",
   "description": "AI code completions for all languages, intellisense, code snippets, code signatures, and cursor-following documentation for VS Code. Kite supports .js .jsx .vue .tsx .ts .css .html .less .c .cc .cpp .cs .h .hpp .m .scala .java .kt .py .go .php .rb and .sh filetypes.",
-  "version": "0.142.0",
+  "version": "0.147.0",
   "publisher": "kiteco",
   "engines": {
     "vscode": "^1.34.0"
@@ -372,7 +372,7 @@
         },
         "kite.codefinder.enableLineDecoration": {
           "type": "boolean",
-          "default": true,
+          "default": false,
           "description": "Enables line decoration for Kite code finder."
         }
       }
@@ -389,8 +389,8 @@
     "install-local": "vsce package && code --install-extension kite-*.vsix && rm kite-*.vsix"
   },
   "dependencies": {
-    "kite-api": "=3.20.0",
-    "kite-connector": "=3.14.0",
+    "kite-api": "=3.21.0",
+    "kite-connector": "=3.16.0",
     "md5": "^2.2.0",
     "mixpanel": "^0.5.0",
     "open": "^7.3.0",
